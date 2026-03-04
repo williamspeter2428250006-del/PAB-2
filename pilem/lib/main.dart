@@ -11,9 +11,12 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'pilem',
-      theme: ThemeData(primaryColor: Colors.blue),
-      home: const HomeScreen()
+      debugShowCheckedModeBanner: false,
+      title: 'Pilem',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const HomeScreen(),
     );
   }
 }
